@@ -1,6 +1,6 @@
 ---
 title: "Untitled"
-author: "Juan Pablo Chan Hau"
+author: "Joseph joel arellano romero "
 date: "2023-09-18"
 output:
   html_document:
