@@ -1,6 +1,6 @@
 ---
 title: "AFDMD-111 Estadística"
-author: "Julio César Ramírez Pacheco"
+author: "Joseph joel arellano romero "
 date: "09/10/2023"
 output:
   rmdformats::readthedown:
