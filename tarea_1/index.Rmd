@@ -1,0 +1,52 @@
+---
+title: "Función coseno"
+author: "Joseph joel arellano romero "
+date: "2023-09-09"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Función coseno
+
+Función coseno y sus propiedades. La función coseno se denota como $\cos(x)$ y se define matemáticamente de la siguiente manera:
+
+$$
+\cos(x) = \frac{{e^{ix} + e^{-ix}}}{2}
+$$
+
+## Gráfico de la Función Coseno
+
+A continuación, se muestra un gráfico de la función coseno en el intervalo de $-\pi$ a $\pi$:
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+x <- seq(-pi, pi, length.out = 100)
+y <- cos(x)
+
+data <- data.frame(x, y)
+
+ggplot(data, aes(x, y)) +
+  geom_line() +
+  labs(x = "Ángulo (radianes)", y = "Coseno") +
+  ggtitle("Gráfico de la Función Coseno")
+```
+```{r g}
+angle <- seq(0, 2 * pi, by = pi/4)
+cos_values <- cos(angle)
+
+table_data <- data.frame(Angulo = angle, Coseno = cos_values)
+knitr::kable(table_data, caption = "Tabla de Valores de la Función Coseno")
+```
+
+
+
+
+
